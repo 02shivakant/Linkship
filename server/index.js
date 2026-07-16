@@ -23,7 +23,7 @@ app.use('/api/links', linksRouter);
 app.use('/', redirectRouter);   // /:code must be last
 
 // Health check
-app.get('/health', (req, res) => {
+app.get('/api/health', (req, res) => {
   res.json({
     status: 'OK',
     service: 'LinkSnip API',
